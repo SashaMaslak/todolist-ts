@@ -33,7 +33,7 @@ function App() {
 
   function addTask(title: string) {
     let newTask = { id: v1(), title: title, isDone: false }
-    setTasks(prevState => [...prevState, newTask])
+    setTasks(prevState => [newTask, ...prevState])
   }
 
   function removeTask(id: string) {
