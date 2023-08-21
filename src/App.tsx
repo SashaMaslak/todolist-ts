@@ -70,6 +70,7 @@ function App() {
         removeTask={removeTask}
         changeFilter={changeFilter}
         changeTaskStatus={changeStatus}
+        filter={filter}
       />
       {/* <TodoList title="What to watch" tasks={tasks2} removeTask={removeTask} />
       <TodoList title="What to listen" tasks={tasks3} removeTask={removeTask} /> */}
