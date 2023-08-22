@@ -13,7 +13,7 @@ function AddItemForm(props: AddItemFormPropsType) {
   }
   const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
     setError(null)
-    if (e.ctrlKey && e.key === "Enter") {
+    if (e.key === "Enter") {
       addTask()
     }
   }
