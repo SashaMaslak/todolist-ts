@@ -4,7 +4,7 @@ type AddItemFormPropsType = {
   addItem: (title: string) => void
 }
 
-function AddItemForm(props: AddItemFormPropsType) {
+export function AddItemForm(props: AddItemFormPropsType) {
   const [title, setTitle] = useState<string>("")
   const [error, setError] = useState<string | null>(null)
 
@@ -40,5 +40,3 @@ function AddItemForm(props: AddItemFormPropsType) {
     </div>
   )
 }
-
-export default AddItemForm
